@@ -1,4 +1,3 @@
-import logo from '@/assets/logo.png';
 import { Instagram, Facebook, Twitter, Phone, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => (
@@ -6,7 +5,6 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
       <div className="flex flex-col items-start gap-3">
         <div className="flex items-center gap-2">
-          <img src={logo} alt="King's Fitness" className="h-12 w-12 rounded-full" />
           <span className="font-display text-xl gold-gradient-text font-bold">KING'S FITNESS</span>
         </div>
         <p className="text-muted-foreground text-sm">Lift · Love · Repeat</p>

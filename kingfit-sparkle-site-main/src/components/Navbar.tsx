@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
-import logo from '@/assets/logo.png';
 import { Menu, X, LogOut } from 'lucide-react';
 
 const Navbar = () => {
@@ -30,7 +29,6 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur border-b border-border">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="King's Fitness" className="h-10 w-10 rounded-full" />
           <span className="font-display text-xl gold-gradient-text font-bold">KING'S FITNESS</span>
         </Link>
 

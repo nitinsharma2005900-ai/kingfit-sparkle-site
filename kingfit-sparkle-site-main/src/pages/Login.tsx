@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
 import { motion } from 'framer-motion';
-import logo from '@/assets/logo.png';
 
 const Login = () => {
   const [isSignup, setIsSignup] = useState(false);
@@ -37,7 +36,6 @@ const Login = () => {
         className="w-full max-w-md bg-card border border-border rounded-lg p-8"
       >
         <div className="flex flex-col items-center mb-6">
-          <img src={logo} alt="King's Fitness" className="h-20 w-20 rounded-full mb-3" />
           <h2 className="font-display text-2xl gold-gradient-text">{isSignup ? 'CREATE ACCOUNT' : 'WELCOME BACK'}</h2>
         </div>
 
